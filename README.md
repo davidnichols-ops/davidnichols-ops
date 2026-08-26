@@ -1,6 +1,6 @@
 # David Nichols
 
-**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made.
+**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made. 15 models on HuggingFace, 4,350+ cumulative downloads.
 
 [![GitHub](https://img.shields.io/badge/GitHub-davidnichols--ops-181717?logo=github)](https://github.com/davidnichols-ops)
 [![HuggingFace](https://img.shields.io/static/v1?label=%F0%9F%A4%97+HuggingFace&message=davidnichols--ops&color=yellow)](https://huggingface.co/davidnichols-ops)
@@ -132,16 +132,13 @@ A post-quantum, agent-first P2P networking stack. Rust reference (19 crates, ~14
 Cryptographic trust infrastructure for MCP servers — content-addressed capability identity, Ed25519-signed manifests, TOFU pinning, and two-gate call-time enforcement. Ships with an empirical health scanner (the "npm audit for MCP") that probes a server and produces a scorecard instead of trusting the agent's self-attested booleans. Three-engine danger detection: heuristic, semantic, and prompt-injection fusion.
 
 ### [mac-ai-os](https://github.com/davidnichols-ops/mac-ai-os)
-A local-first AI operating system for macOS — an intelligence layer over the computer, not a chatbot. It reasons, retrieves, chooses tools, executes, verifies, and explains. The part I'm proudest of is the PR governance system: an evidence-producing state machine (DRAFT → UNDERSTOOD → VERIFIED → PR_READY) that captures real command output tied to a commit, so an agent can't fake "tests pass" by claiming a boolean.
+A local-first AI operating system for macOS — an intelligence layer over the computer, not a chatbot. It reasons, retrieves, chooses tools, executes, verifies, and explains. The part I'm proudest of is the PR governance system: an evidence-producing state machine (DRAFT → UNDERSTOOD → VERIFIED → PR_READY) that captures real command output tied to a commit, so an agent can't fake "tests pass" by claiming a boolean. Includes an `engineering-intelligence/` module for dependency scanning, graph analysis, and OSV enrichment.
 
 ### [X-MaC](https://github.com/davidnichols-ops/X-MaC) · [Homebrew tap](https://github.com/davidnichols-ops/homebrew-xmac)
 A macOS system sanitizer and discovery tool in Rust. Every engine is read-only. Privacy redaction is on by default — home paths, tokens, keys, emails, IPs. Remediation scripts are emitted with destructive commands commented out and paths shell-quoted against injection.
 
 ### [repo-archaeologist](https://github.com/davidnichols-ops/repo-archaeologist)
 Point it at an abandoned repo. Get an opinionated architecture, risk, and onboarding briefing in seconds. Zero runtime deps, offline, deterministic. The v1 deliberately avoids LLM prose — a working heuristic is more useful than a broken AI version.
-
-### [dependency-intelligence](https://github.com/davidnichols-ops/dependency-intelligence)
-Local-first dependency observability. Scans manifests across Python/JS/Rust/Go, builds a SQLite graph with recursive CTEs for transitive traversal, enriches with OSV vulnerabilities and registry metadata, computes risk findings mapped to a maintainer-corpus failure taxonomy, and exports to Obsidian + an agent-first JSON API. Built after watching a Roboflow PR get closed because the test assumed observed topology was a declared contract — the system enriches observed data with external ground truth instead.
 
 ---
 
