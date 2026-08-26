@@ -3,8 +3,8 @@
 **Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made.
 
 [![GitHub](https://img.shields.io/badge/GitHub-davidnichols--ops-181717?logo=github)](https://github.com/davidnichols-ops)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-HuggingFace-davidnichols--ops-yellow)](https://huggingface.co/davidnichols-ops)
-[![X](https://img.shields.io/badge/follow-%40real__dnichols-000000?logo=x)](https://x.com/real_dnichols)
+[![HuggingFace](https://img.shields.io/static/v1?label=%F0%9F%A4%97+HuggingFace&message=davidnichols--ops&color=yellow)](https://huggingface.co/davidnichols-ops)
+[![X](https://img.shields.io/badge/follow-%40davidnicholsops-000000?logo=x)](https://x.com/davidnicholsops)
 
 ---
 
