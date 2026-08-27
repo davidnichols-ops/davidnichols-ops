@@ -1,6 +1,6 @@
 # David Nichols
 
-**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made. 15 models on HuggingFace (fine-tunes, GGUF/MLX exports, Nemotron conversion forks), 4,350+ cumulative downloads.
+**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made. 15 models on HuggingFace (fine-tunes, GGUF/MLX exports, Nemotron conversion forks), 4,300+ cumulative downloads.
 
 [![GitHub](https://img.shields.io/badge/GitHub-davidnichols--ops-181717?logo=github)](https://github.com/davidnichols-ops)
 [![HuggingFace](https://img.shields.io/static/v1?label=%F0%9F%A4%97+HuggingFace&message=davidnichols--ops&color=yellow)](https://huggingface.co/davidnichols-ops)
