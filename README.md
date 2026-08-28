@@ -16,26 +16,19 @@ I open PRs upstream when the fix is general. Some merge, some don't. Here's the 
 
 | Date | Repo | PR | What |
 |------|------|----|------|
+| 2026-08-28 | roboflow/inference | [#2834](https://github.com/roboflow/inference/pull/2834) | Cache namespace refcounting with per-instance locking for thread-safe cleanup |
+| 2026-08-28 | roboflow/inference | [#2844](https://github.com/roboflow/inference/pull/2844) | Resolve `inference.Model` through the lazy package init (PEP 562) |
 | 2026-08-25 | huggingface/peft | [#3603](https://github.com/huggingface/peft/pull/3603) | Troubleshooting section for hybrid architecture target_modules |
 | 2026-07-06 | tensorflow/tensorflow | [#122706](https://github.com/tensorflow/tensorflow/pull/122706) | XLA DenseBincount negative input validation for runtime tensors |
 | 2026-07-02 | ultralytics/ultralytics | [#25020](https://github.com/ultralytics/ultralytics/pull/25020) | Exclude Sigmoid from TensorRT INT8 quantization |
 | 2026-06-30 | roboflow/roboflow-python | [#502](https://github.com/roboflow/roboflow-python/pull/502) | Return single_upload result from Project.upload() |
 | 2026-06-30 | roboflow/roboflow-python | [#501](https://github.com/roboflow/roboflow-python/pull/501) | Relax opencv-python-headless pin to >=4.10.0 |
-| 2026-07-12 | inceptyon-labs/gargantua | [#6](https://github.com/inceptyon-labs/gargantua/pull/6) | Fix singular byte formatting in AlertItem.formatBytes |
-| 2026-07-12 | Lcharvol/MacSift | [#12](https://github.com/Lcharvol/MacSift/pull/12) | Fix case-sensitive path matching in iOS backup description |
-| 2026-07-12 | haukesomm/apple-photos-export | [#14](https://github.com/haukesomm/apple-photos-export/pull/14) | Fix README typos: Sequoia, always |
-| 2026-07-12 | thaw-app/Thaw | [#775](https://github.com/thaw-app/Thaw/pull/775) | Fix typo and IceBar references in URI schemes |
-| 2026-07-12 | everettjf/atosl-rs | [#15](https://github.com/everettjf/atosl-rs/pull/15) | Add C++ demangling and non-mangled passthrough tests |
-| 2026-07-12 | tuna-f1sh/cyme | [#122](https://github.com/tuna-f1sh/cyme/pull/122) | Fix typos in doc comments |
-| 2026-07-12 | jackson-storm/DynamicNotch | [#145](https://github.com/jackson-storm/DynamicNotch/pull/145) | Fix incorrect alt text for gallery images in README |
 
 ### Open
 
 | Date | Repo | PR | What |
 |------|------|----|------|
 | 2026-08-24 | npm/rfcs | [#917](https://github.com/npm/rfcs/pull/917) | RFC: install trust audit — classified fetch telemetry for package publishers |
-| 2026-08-23 | roboflow/inference | [#2844](https://github.com/roboflow/inference/pull/2844) | Resolve Model through the lazy package init |
-| 2026-08-20 | roboflow/inference | [#2834](https://github.com/roboflow/inference/pull/2834) | Clear every touched namespace in cache blocks (refcounted ownership) |
 | 2026-08-17 | huggingface/transformers | [#48022](https://github.com/huggingface/transformers/pull/48022) | Warn when pad_token_id is in eos_token_id list |
 
 ### Closed (not merged)
@@ -48,15 +41,8 @@ I open PRs upstream when the fix is general. Some merge, some don't. Here's the 
 | 2026-08-17 | huggingface/transformers | [#48021](https://github.com/huggingface/transformers/pull/48021) | NemotronHConfig num_hidden_layers property. Maintainer addressed differently. |
 | 2026-07-28 | microsoft/onnxruntime | [#29921](https://github.com/microsoft/onnxruntime/pull/29921) | Document EP fallback detection. Closed — docs went elsewhere. |
 | 2026-07-28 | ultralytics/ultralytics | [#25481](https://github.com/ultralytics/ultralytics/pull/25481) | ONNX export parity test. Closed — overlap with existing work. |
-| 2026-07-27 | OpenHands/OpenHands | [#16104](https://github.com/OpenHands/OpenHands/pull/16104) | Vite file watcher fix. Closed — fixed upstream independently. |
-| 2026-07-25 | ultralytics/ultralytics | [#25425](https://github.com/ultralytics/ultralytics/pull/25425) | ONNX export parity test (earlier attempt). |
 | 2026-07-25 | apple/coremltools | [#2763](https://github.com/apple/coremltools/pull/2763) | Numerically stable log_softmax and logcumsumexp. |
-| 2026-07-16 | haukesomm/apple-photos-export | [#15–17](https://github.com/haukesomm/apple-photos-export/pull/15) | Album filter and dedup fixes. Maintainer implemented own version. |
-| 2026-07-12 | sindresorhus/nano-spawn | [#116](https://github.com/sindresorhus/nano-spawn/pull/116) | Accept strings as stdin input. Out of scope. |
-| 2026-07-12 | apple/coremltools | [#2754–2756](https://github.com/apple/coremltools/pull/2754) | numpy 2.x scalar conversion and softplus fixes. |
-| 2026-07-12 | ultralytics/ultralytics | [#25118, #25125](https://github.com/ultralytics/ultralytics/pull/25118) | DDP callback serialization. |
 | 2026-07-12 | huggingface/transformers | [#47267](https://github.com/huggingface/transformers/pull/47267) | Restore dict return type in create_masks_for_generate. |
-| 2026-07-12 | roboflow/roboflow-python | [#506](https://github.com/roboflow/roboflow-python/pull/506) | YOLO data.yaml path fix. Closed — maintainer addressed. |
 
 ### Review contributions
 
