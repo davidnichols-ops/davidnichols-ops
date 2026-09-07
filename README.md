@@ -1,6 +1,6 @@
 # David Nichols
 
-**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made. 18 models on HuggingFace (fine-tunes, GGUF/MLX exports, Nemotron conversion forks, speculative decoding draft pairs), 5,300+ cumulative downloads.
+**Building systems that have to be right on real hardware.** 17. Edge-first. The work lives at the boundary where a model's opinion stops and an auditable decision has to be made. 18 models on HuggingFace, 5,300+ cumulative downloads.
 
 [![GitHub](https://img.shields.io/badge/GitHub-davidnichols--ops-181717?logo=github)](https://github.com/davidnichols-ops)
 [![HuggingFace](https://img.shields.io/static/v1?label=%F0%9F%A4%97+HuggingFace&message=davidnichols--ops&color=yellow)](https://huggingface.co/davidnichols-ops)
@@ -70,28 +70,15 @@ I open PRs upstream when the fix is general. Some merge, some don't. Here's the 
 
 ## Models and datasets
 
-I fine-tune and publish models on [HuggingFace](https://huggingface.co/davidnichols-ops). 18 models, 1 dataset, 5,300+ downloads.
+I fine-tune and publish models on [HuggingFace](https://huggingface.co/davidnichols-ops). 18 models, 1 dataset, 5,300+ downloads. The notable ones:
 
 | Model | Base | What | Downloads |
 |-------|------|------|-----------|
 | [claude-yolo-vibes](https://huggingface.co/davidnichols-ops/claude-yolo-vibes) | Qwen3-1.7B | Personality fine-tune for the agent loop | 1,265 |
 | [qwen3-0.6b-devin-draft](https://huggingface.co/davidnichols-ops/qwen3-0.6b-devin-draft) | Qwen3-0.6B | Speculative decoding draft model paired with qwen3-4b-devin-sft | 775 |
 | [qwen3-4b-devin-sft](https://huggingface.co/davidnichols-ops/qwen3-4b-devin-sft) | Qwen3-4B | SFT for agentic tool use and Devin-style coding | 769 |
-| [qwen3-1.7b-chaotic-enthusiastic](https://huggingface.co/davidnichols-ops/qwen3-1.7b-chaotic-enthusiastic) | Qwen3-1.7B | High-energy personality fine-tune | 484 |
 | [claude-yolo-vibes-v4-dpo](https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-dpo) | Qwen2.5-Coder-7B | DPO preference-optimized code assistant | 454 |
-| [claude-yolo-vibes-v4-sft](https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-sft) | Qwen2.5-Coder-7B | SFT base for the v4 line | 452 |
-| [claude-yolo-vibes-v4-GGUF](https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-GGUF) | Qwen2.5-Coder-7B | GGUF for Ollama/LM Studio | 314 |
 | [NVIDIA-Nemotron-Nano-9B-v2-fork](https://huggingface.co/davidnichols-ops/NVIDIA-Nemotron-Nano-9B-v2-fork) | Nemotron Nano 9B | Fork with config fixes for GGUF conversion | 173 |
-| [NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-fork](https://huggingface.co/davidnichols-ops/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-fork) | Nemotron 3 Nano 30B | Fork with config fixes | 153 |
-| [claude-yolo-vibes-v4-mlx-4bit](https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-mlx-4bit) | Qwen2.5-Coder-7B | 4-bit MLX, runs on M4 16GB | 146 |
-| [adaptive-operator-v4-gguf](https://huggingface.co/davidnichols-ops/adaptive-operator-v4-gguf) | Qwen3.5-9B | GGUF export of agentic tool-use model | 84 |
-| [nemotron-9b-v2-sft-v5-GGUF](https://huggingface.co/davidnichols-ops/nemotron-9b-v2-sft-v5-GGUF) | Nemotron Nano 9B | SFT v5 GGUF export | 71 |
-| [qwen3-4b-devin-sft-mlx-4bit](https://huggingface.co/davidnichols-ops/qwen3-4b-devin-sft-mlx-4bit) | Qwen3-4B | 4-bit MLX export of Devin SFT model | 42 |
-| [yolo-hybrid-v6](https://huggingface.co/davidnichols-ops/yolo-hybrid-v6) | Qwen2.5 Hybrid | Hybrid detection model | 39 |
-| [Anti-Reasoning-Engine-0.5B](https://huggingface.co/davidnichols-ops/Anti-Reasoning-Engine-0.5B) | Qwen2.5-0.5B | A joke model that refuses to reason. The internet is weird. | 32 |
-| [adaptive-operator-v4](https://huggingface.co/davidnichols-ops/adaptive-operator-v4) | Qwen3.5-9B | Agentic tool-use with custom control tokens for adaptive compute | 29 |
-| [adaptive-operator-v4-mlx-4bit](https://huggingface.co/davidnichols-ops/adaptive-operator-v4-mlx-4bit) | Qwen3.5-9B | 4-bit MLX export | 19 |
-| [nemotron-9b-v2-sft-v5](https://huggingface.co/davidnichols-ops/nemotron-9b-v2-sft-v5) | Nemotron Nano 9B | SFT v5 checkpoint | 15 |
 
 [adaptive-operator-v4-dataset](https://huggingface.co/datasets/davidnichols-ops/adaptive-operator-v4-dataset) — SFT + DPO training data for agentic tool use (4,992 SFT examples, 5,000 DPO pairs).
 
@@ -122,8 +109,11 @@ These are observations I keep arriving at, not slogans I started with.
 ### [apple-quality-recognition-engine](https://github.com/davidnichols-ops/apple-quality-recognition-engine)
 Real-time CV pipeline for apple variety detection and USDA-style grading, built for the family orchard. YOLO26 detects; a `grading_policy.yaml` file grades. Defects bind to apples via Intersection-over-Area. Low-confidence frames are harvested as free training data. Runs on the Apple Neural Engine through CoreML. This is the project where my principles actually have to hold up against a piece of fruit.
 
-### [AAFP](https://github.com/davidnichols-ops/aafp) · [research umbrella](https://github.com/davidnichols-ops/AAFP-research) · [Go interop](https://github.com/davidnichols-ops/aafp-go) · [Commons](https://github.com/davidnichols-ops/aafp-commons)
-A post-quantum, agent-first P2P networking stack. Rust reference (19 crates, ~140K lines), a TypeScript SDK, and a Go implementation written strictly from the RFCs to validate that the wire format is unambiguous. The transport is frozen at Rev 6; the work above it is an Intelligence Plane — predictive routing, intent routing, reputation, pubsub. AAFP Commons is a signed, evidence-aware collective memory ledger for software agents — append-only, Ed25519-signed, with conflict/resolution tracking. The competitor is not HTTP. The competitor is cloud silos that own the agent graph.
+### [AAFP](https://github.com/davidnichols-ops/aafp) · [research umbrella](https://github.com/davidnichols-ops/AAFP-research) · [Go interop](https://github.com/davidnichols-ops/aafp-go)
+A post-quantum, agent-first P2P networking stack. Rust reference (19 crates, ~140K lines), a TypeScript SDK, and a Go implementation written strictly from the RFCs to validate that the wire format is unambiguous. The transport is frozen at Rev 6; the work above it is an Intelligence Plane — predictive routing, intent routing, reputation, pubsub. The competitor is not HTTP. The competitor is cloud silos that own the agent graph.
+
+### [aafp-commons](https://github.com/davidnichols-ops/aafp-commons)
+Signed, evidence-aware collective memory and MCP/CLI ledger for software agents. Append-only, Ed25519-signed packets with conflict/resolution tracking. Agents read it as source posture or init as a subject under a digest-pinned constitution. Proposals need evidence — a boolean from the agent is not a finding. Integrates with MAOS so lessons export as signed KnowledgePackets. Hook + file only — no daemon, no home creation, no fetch.
 
 ### [trustcard](https://github.com/davidnichols-ops/trustcard)
 Cryptographic trust infrastructure for MCP servers — content-addressed capability identity, Ed25519-signed manifests, TOFU pinning, and two-gate call-time enforcement. Ships with an empirical health scanner (the "npm audit for MCP") that probes a server and produces a scorecard instead of trusting the agent's self-attested booleans. Three-engine danger detection: heuristic, semantic, and prompt-injection fusion.
