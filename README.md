@@ -16,7 +16,6 @@ I open PRs upstream when the fix is general. Some merge, some don't. Here's the 
 
 | Date | Repo | PR | What |
 |------|------|----|------|
-| 2026-08-31 | roboflow/inference | [#2892](https://github.com/roboflow/inference/pull/2892) | Preserve image dimensions on empty VLM detection workflow output |
 | 2026-08-28 | roboflow/inference | [#2834](https://github.com/roboflow/inference/pull/2834) | Cache namespace refcounting with per-instance locking for thread-safe cleanup |
 | 2026-08-28 | roboflow/inference | [#2844](https://github.com/roboflow/inference/pull/2844) | Resolve `inference.Model` through the lazy package init (PEP 562) |
 | 2026-08-25 | huggingface/peft | [#3603](https://github.com/huggingface/peft/pull/3603) | Troubleshooting section for hybrid architecture target_modules |
@@ -29,6 +28,7 @@ I open PRs upstream when the fix is general. Some merge, some don't. Here's the 
 
 | Date | Repo | PR | What |
 |------|------|----|------|
+| 2026-08-31 | roboflow/inference | [#2892](https://github.com/roboflow/inference/pull/2892) | Preserve image dimensions on empty VLM detection workflow output — awaiting review |
 | 2026-08-24 | npm/rfcs | [#917](https://github.com/npm/rfcs/pull/917) | RFC: install trust audit — classified fetch telemetry for package publishers |
 | 2026-08-17 | huggingface/transformers | [#48022](https://github.com/huggingface/transformers/pull/48022) | Warn when pad_token_id is in eos_token_id list |
 
@@ -107,7 +107,7 @@ These are observations I keep arriving at, not slogans I started with.
 ## Selected Projects
 
 ### [apple-quality-recognition-engine](https://github.com/davidnichols-ops/apple-quality-recognition-engine)
-Real-time CV pipeline for apple variety detection and USDA-style grading, built for the family orchard. YOLO26 detects; a `grading_policy.yaml` file grades. Defects bind to apples via Intersection-over-Area. Low-confidence frames are harvested as free training data. Runs on the Apple Neural Engine through CoreML. This is the project where my principles actually have to hold up against a piece of fruit.
+Real-time CV pipeline for apple variety detection and USDA-style grading, built for the family orchard. YOLO26 detects; a `grading_policy.yaml` file grades. Defects bind to apples via Intersection-of-Area. Low-confidence frames are harvested as free training data. Runs on the Apple Neural Engine through CoreML. This is the project where my principles actually have to hold up against a piece of fruit.
 
 ### [AAFP](https://github.com/davidnichols-ops/aafp) · [research umbrella](https://github.com/davidnichols-ops/AAFP-research) · [Go interop](https://github.com/davidnichols-ops/aafp-go)
 A post-quantum, agent-first P2P networking stack. Rust reference (19 crates, ~140K lines), a TypeScript SDK, and a Go implementation written strictly from the RFCs to validate that the wire format is unambiguous. The transport is frozen at Rev 6; the work above it is an Intelligence Plane — predictive routing, intent routing, reputation, pubsub. The competitor is not HTTP. The competitor is cloud silos that own the agent graph.
