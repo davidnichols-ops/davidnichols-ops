@@ -5,12 +5,13 @@ computer-vision and ML codebases, and build local-first tooling that verifies a
 system is still what it claims to be. Most of the work sits at the boundary
 where a model's output stops and an auditable decision has to be made.
 
-*1,029 contributions in the trailing year (GitHub contributions graph, 2026-09-12).*
+*1,030 contributions in the trailing year (GitHub contributions graph, 2026-09-18).*
 
 ## Merged upstream contributions
 
 | Merged | Project | Change |
 |---|---|---|
+| 2026-09-18 | [roboflow/inference#2983](https://github.com/roboflow/inference/pull/2983) | Carry image dimensions through empty Florence-2 object-detection results |
 | 2026-09-11 | [roboflow/inference#2892](https://github.com/roboflow/inference/pull/2892) | Preserve image dimensions on empty VLM detection workflow output |
 | 2026-08-28 | [roboflow/inference#2834](https://github.com/roboflow/inference/pull/2834) | Clear every touched namespace in workflow cache blocks — refcounted ownership + per-instance locking |
 | 2026-08-28 | [roboflow/inference#2844](https://github.com/roboflow/inference/pull/2844) | Resolve `inference.Model` through the lazy package init (PEP 562) |
@@ -19,13 +20,8 @@ where a model's output stops and an auditable decision has to be made.
 | 2026-07-27 | [tensorflow/tensorflow#122706](https://github.com/tensorflow/tensorflow/pull/122706) | XLA `DenseBincount` negative-input validation for runtime tensors |
 | 2026-07-09 | [ultralytics/ultralytics#25020](https://github.com/ultralytics/ultralytics/pull/25020) | Exclude `Sigmoid` from TensorRT INT8 quantization |
 
-Eight merged pull requests across six third-party projects. I contribute upstream
+Nine merged pull requests across six third-party projects. I contribute upstream
 as an outside contributor — I don't maintain these projects.
-
-**Open now**
-
-- [roboflow/inference#2983](https://github.com/roboflow/inference/pull/2983) — **draft**, open 2026-09-12: carry image dimensions on empty Florence-2 VLM results.
-- [huggingface/transformers#48022](https://github.com/huggingface/transformers/pull/48022) — open: warn when `pad_token_id` is in the `eos_token_id` list.
 
 I also have closed attempts and small doc/typo merges; the merged set above is
 the substantive record, so I don't enumerate the rest here.
