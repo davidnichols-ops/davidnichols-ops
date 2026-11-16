@@ -4,10 +4,17 @@ I work on computer vision, inference reliability, and tools for inspecting and c
 
 I'm especially interested in the parts around the model: preserving data through a workflow, understanding runtime failures, and making decisions traceable to code and policy. Most of my work is in Python, with JavaScript for MCP tooling and a particular interest in Apple Silicon.
 
-## Projects
+## Active project
 
 - **[trustcard](https://github.com/davidnichols-ops/trustcard)** — tooling for inspecting MCP servers, signing capability manifests, detecting changes, and enforcing which tool calls are allowed. Available as [`mcp-trustcard`](https://www.npmjs.com/package/mcp-trustcard).
-- **[Apple Quality Recognition Engine](https://github.com/davidnichols-ops/apple-quality-recognition-engine)** — an apple-grading prototype that separates visual observations from a versioned grading policy. The current work centers on annotation, case review, and human-approved training data. It does not yet include a trained apple checkpoint or a validated commercial grading system.
+
+## Research case study: AQRE
+
+**[Apple Quality Recognition Engine](https://github.com/davidnichols-ops/apple-quality-recognition-engine)** — a retired computer-vision research prototype for apple grading. I built capture and annotation tooling, a deterministic grading engine, review-evidence logging, and a model smoke-test adapter. A trained YOLO26s-Seg model was exercised on 127 images, including 30 four-view apple profiles.
+
+The experiment exposed weak surface-defect recall, dataset split leakage, and gaps in bruise assessment, size measurement, and per-apple conveyor tracking. I retired active development rather than expand annotation work without evidence that it would resolve the operating requirements. The closeout preserves the implementation, 65 passing tests, known limitations, and a 120-image partial dataset.
+
+[Engineering findings and retirement decision](https://github.com/davidnichols-ops/apple-quality-recognition-engine/blob/main/docs/RETIREMENT.md) · [Prediction evidence and replay instructions](https://github.com/davidnichols-ops/apple-quality-recognition-engine/tree/main/research/closeout) · [Partial dataset release](https://github.com/davidnichols-ops/apple-quality-recognition-engine/releases/tag/research-retirement-2026-11-16)
 
 ## Selected upstream contributions
 
@@ -31,4 +38,4 @@ I like understanding a system well enough to explain why it failed. I'm building
 - Add regression coverage and report exactly what was tested.
 - Keep model outputs, policy decisions, and human approval separate where the application calls for it.
 
-Older repositories include experiments and archived work. Their READMEs describe their status; the two projects above are my current focus.
+Older repositories include experiments and archived work. Their READMEs describe their status. Trustcard remains active; AQRE is preserved as a documented research case study.
